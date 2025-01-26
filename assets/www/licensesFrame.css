@@ -1,0 +1,40 @@
+/**
+ * Prefix all styles to avoid possible style overrides from licenses.html
+ * based on (BEM naming convention http://getbem.com/naming/)
+ */
+
+@font-face {
+    font-family: 'Brutal-Regular';
+    src: url('./fonts/BrutalType-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Brutal-Medium';
+    src: url('./fonts/BrutalType-Medium.woff') format('woff');
+}
+
+body.licenses-frame {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Brutal-Regular';
+    background-color: white;
+}
+
+.licenses-frame__content {
+    width: 100%;
+    height: 100%;
+}
+
+.licenses-frame__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+}
+
+.header, .library {
+    overflow-wrap: break-word;
+}
